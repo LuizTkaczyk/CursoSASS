@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #333030;
+}
+
+.bola1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fd0000;
+}
+
+.bola1 .link {
+  color: #5c5c02;
+  font-size: 20px;
+}
+
+.bola1:hover {
+  background-color: blue;
+}
+
+.bola2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.bola2:hover {
+  background-color: #fd0000;
+}
+
+.bola3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: lime;
+}
+
+.bola3:hover {
+  background-color: #fd0000;
+}
+/*# sourceMappingURL=style.css.map */

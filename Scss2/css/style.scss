@@ -1,0 +1,62 @@
+//@import "./variaveis.scss";
+$corPrimaria:rgb(253, 0, 0);
+$corSecundaria:rgb(0, 0, 255);
+$corTerciaria:rgb(0, 255, 0);
+
+//função em Sass com ou sem variavel
+@mixin padraoBody($justifica_conteudo) {
+    display: flex;
+    justify-content: $justifica_conteudo; //bolas com espaçamento
+    align-items: center;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include padraoBody(space-between);
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(51, 48, 48);
+}
+
+.bola1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $corPrimaria;
+
+    .link{
+        color: rgb(92, 92, 2);
+        font-size: 20px;
+    }
+
+    &:hover{
+        background-color: $corSecundaria;
+    }
+}
+.bola2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:$corSecundaria;
+
+    &:hover{
+        background-color: $corPrimaria;
+    }
+}
+.bola3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $corTerciaria;
+
+    &:hover{
+        background-color: $corPrimaria;
+    }
+}

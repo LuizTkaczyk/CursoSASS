@@ -1,0 +1,41 @@
+/* o seletor "*" seleciona todos os elementos do documento*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*seletor por atributo*/
+[type="text"]{
+    background-color: rgba(5, 51, 70, 0.69);
+    color: white;
+}
+
+/*pseudo seletores, tem o : (dois pontos) e sem espaço entre o identificador*/
+#botao:hover{
+    background-color: black;
+    color: yellow;
+}
+
+/*
+****medidas absolutas******
+centimetro - cm
+milimetros - mm
+polegadas - in
+pixels -px
+pontos - pt
+paicas pc
+
+****medidas relativas****
+porcentagem - %
+m - em (usa a letra m como referencia de tamanho)
+Root M - rem
+Unidade do caractere - ch
+X - ex (usa a letra x como referencia de tamanho)
+Largura da janela de exibição - vw
+altura da janela de exibição - vh
+janela de exibição minina - vmin
+janela de exibição maxima - vmax
+fração restante - fr
+
+*/

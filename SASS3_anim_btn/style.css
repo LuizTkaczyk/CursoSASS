@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(92, 84, 84);
+  color: white;
+  font-family: sans-serif;
+}
+
+.pulse{
+  background: none;
+  color: rgb(2, 255, 15);
+  border: 2px solid;
+  margin: 49px;
+  padding: 14px 38px;
+  transition: 0.25s;
+  border-radius: 5px;
+
+}
+
+
+.pulse:hover, .pulse:focus{
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 20px rgba(254, 254, 255, 0);
+  animation: pulsar 0.5s;
+}
+
+@keyframes pulsar {
+  0%{
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  }
+}
