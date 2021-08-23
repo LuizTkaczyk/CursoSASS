@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+width: Define a largura dos elementos. O que não inclui as margens, bordas e espaçamento.
+OBS. As propriedades max-width e min-width quando presentes, sobrescrevem a propriedade width.
+Valores possíveis : auto, lenght, fit-content, initial, inherit, max-content, min-content, revert e unset.
+Valor padrão : auto
+Valor herdado : não
+*/
+
+        #width {
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        /*  pega as classes que inciam em width1*/
+        #width>div[class^=width1] {
+            border-style: solid;
+            border-width: 2px;
+            margin: 2%;
+            height: 110px;
+        }
+
+        .width1-auto {
+            width: auto;
+            border-color: rgb(44, 6, 105);
+        }
+
+        .width1-vwvh {
+            width: 50vh;
+            border-color: rgb(0, 0, 0);
+        }
+
+        .width1-percent {
+            width: 100%;
+            border-color: rgb(65, 63, 63);
+        }
+
+        .width1-pixel {
+            width: 350px;
+            border-color: rgb(0, 14, 90);
+        }
+
+        .width1-fit {
+            width: fit-content;
+            border-color: rgb(1, 3, 14);
+        }
+
+        .width1-min {
+            width: min-content;
+            border-color: rgb(100, 100, 100);
+        }
+
+
+        .width1-max {
+            width: max-content;
+            border-color: rgb(45, 116, 4);
+        }
+
+        .width1-revert {
+            width: revert;
+            border-color: rgb(50, 51, 49);
+        }
+
+        .width1-unset {
+            width: unset;
+            border-color: rgb(104, 116, 98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="" id="width">
+        <div class="width1-auto">Auto
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis reiciendis incidunt ipsum et ea,
+            explicabo possimus unde, dolore veniam earum voluptatibus nesciunt totam! Nesciunt autem voluptatibus
+            accusamus dicta recusandae.
+        </div>
+        <hr>
+        <div class="width1-vwvh">VWVH
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis reiciendis incidunt ipsum et ea,
+            explicabo possimus unde, dolore veniam earum voluptatibus nesciunt totam! Nesciunt autem voluptatibus
+            accusamus dicta recusandae.
+        </div>
+        <hr>
+        <div class="width1-percent">PERCENT
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis reiciendis
+            accusamus dicta recusandae.
+        </div>
+        <hr>
+        <div class="width1-pixel">Pixel
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis reiciendis incidunt ipsum et ea,
+            explicabo possimus unde, dolore veniam earum voluptatibus nesciunt totam! Nesciunt autem voluptatibus
+            accusamus dicta recusandae.
+        </div>
+        <hr>
+        <div class="width1-fit">FIT
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste perspiciatis reiciendis
+        </div>
+        <hr>
+        <div class="width1-min">MIN
+            Lorem ipsum, dolor sit amet consectetur
+        </div>
+        <hr>
+        <div class="width1-revert">REVERT
+            Lorem ipsum, dolor sit amet consectetur
+        </div>
+
+        <hr>
+        <div class="width1-unset">UNSET
+            Lorem ipsum, dolor sit amet consectetur
+        </div>
+    </div>
+</body>
+
+</html>

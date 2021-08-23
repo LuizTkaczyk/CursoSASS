@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+min-width : Define a largura mínima dos elementos. O que não inclui as margens, bordas e espaçamento.
+Valores possíveis: none, length, max-content, min-content, fit-content(length), unset, initial, inherit
+Valor padrão : auto
+Valor herdado: não
+
+*/
+        .container {
+            width: 30%;
+            height: 20vh;
+            background-color: peru;
+        }
+
+        .item {
+            min-width: 100px;
+            height: 10vh;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, maiores asperiores quo hic laudantium
+            fugiat eligendi eveniet debitis. Sit placeat dolorem sunt nemo accusantium accusamus, molestiae voluptatibus
+            quasi molestias quidem.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+max-width : define a largura máxima do elemento.
+Se o conteúdo for maior que a largura máxima, ele mudará automaticamente a altura do elemento.
+Se o conteúdo for menor que a largura máxima, a propriedade não terá efeito.
+Valores possíveis: none, length, max-content, min-content, fit-content(length), unset, initial, inherit
+Valor padrão: none
+Valor herdado: não
+*/
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #max-width {
+            max-width: 100%;
+            height: 20vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+        }
+
+        #max-width1 {
+            width: 700px;
+            height: 10vh;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="" id="max-width">
+        <div class="" id="max-width1"></div>
+    </div>
+</body>
+
+</html>
