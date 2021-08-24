@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define o espaço do lado esquerdo do elemento, fora de qualquer borda definida.
+        Valores possíveis:length, auto, initial, inherit
+        Valor padrão :0
+        Valor herdado: não
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .bloco {
+            width: 20vw;
+            height: 20vw;
+            background-color: brown;
+            /*margin-left: 2vh;*/
+        }
+        /*
+        .bloco:first-child {
+            /* margin-left: unset;*/
+            /*margin-left: 0;*/
+            /*margin-left: initial;
+
+        }
+        */
+        .bloco+.bloco {
+            margin-left: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bloco"></div>
+    <div class="bloco"></div>
+    <div class="bloco"></div>
+</body>
+
+</html>

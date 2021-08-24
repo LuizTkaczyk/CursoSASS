@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define a distância da borda de um elemento até seu conteúdo.
+        Esta propriedade é a abreviação das seguintes propriedades.
+        -padding-top
+        -padding-right
+        -padding-bottom
+        -padding-left
+
+        Padding criará espaço extra dentro de um elemento, enquanto a margem cria espaço extra ao redor de um elemento.
+
+        Valores possíveis: length, initial, inherit
+        Valor padrão : 0
+        Valor herdado: não
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bloco {
+            margin: 50px auto;
+            padding:50px;
+            width: 50vw;
+            height: 500px;
+            background-color: orange;
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bloco">
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
