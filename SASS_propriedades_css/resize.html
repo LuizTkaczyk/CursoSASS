@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS determina se e como um elemento HTML que possua essa propriedade poderá ser redimensionado pelo usuário
+        Valores possíveis: none, both, horizontal, vertical, block, inline, initial, inherit, unset
+        Valor inicial: none
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            width: 50vw;
+
+        }
+
+        .item {
+            resize: both;
+            overflow: auto;
+        }
+
+        textarea{
+            resize: vertical;
+        }
+        
+        /*manipulando somente o segundo paragrafo*/
+        p:nth-child(2){
+            resize: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, quia consequuntur numquam nostrum
+            sint amet distinctio maiores, eveniet quam corrupti aut accusantium inventore eius a repudiandae, eaque
+            consectetur modi? Veritatis.</p>
+        <p class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, quia consequuntur numquam nostrum
+            sint amet distinctio maiores, eveniet quam corrupti aut accusantium inventore eius a repudiandae, eaque
+            consectetur modi? Veritatis.</p>
+
+        <form action="">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>

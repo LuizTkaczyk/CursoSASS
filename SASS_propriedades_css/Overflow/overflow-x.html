@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS especifica se o conteúdo deve ser cortado, adicionado uma bara de rolagem ou exibir o conteúdo do estouro de um elemento de nível de bloco quando este estoura nas bordas laterais
+        Valores possíveis: visible, hidden, scrool, auto, initial, inherit, unset
+        Valor inicial : visible
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container{
+            width: 300px;
+            display: flex;
+            height: 200px;
+            border:5px solid black;
+            overflow-x: auto;
+
+        }
+        .item{
+            padding: 50px;
+            margin-right: 20px;
+            border: 5px solid rgb(4, 114, 22);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Curso 1</div>
+        <div class="item">Curso 2</div>
+        <div class="item">Curso 3</div>
+        <div class="item">Curso 4</div>
+        <div class="item">Curso 5</div>
+    </div>
+</body>
+
+</html>

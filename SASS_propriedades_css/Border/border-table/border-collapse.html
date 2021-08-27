@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define se as bordas de uma tabela devem ser mescladas em uma única, ou se devem se manter separadas
+        Valores possíveis: collapse, separate, unset, initial, inherit
+        Valor padrão:separate
+        Valor herdado: não
+        */
+
+        * {
+            box-sizing: border-box;
+
+            
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:center;
+
+        }
+
+        table{
+            border: solid 1px black;
+            width: 70vw;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: solid 1px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

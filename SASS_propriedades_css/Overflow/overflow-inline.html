@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS rrá especificar o que deve ser exibido quando o conteúdo estoura os limite de um elemento de linha onde foi definida e pode ser usada na condição de uma midia query
+        Esta propriedade irá direcionar para as propriedades overflow-y ou overflow-x dependendo do modo de escrita do documento.
+       ***Disponível apenas no Firefox
+
+       Valores possíveis : visible, hidden, scroll, initial, inherit, unset
+       Valor inicial: auto
+       Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 200px;
+          
+            border: 5px solid black;
+            overflow-inline: auto;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       Lorem ipsum dolor sit amet consectetur adipidddddddddddddddddddddddddddddsicing elit. Cum minus, eos rerum et laborum nihil sunt similique culpa velit laboriosam corporis hic ratione laudantium commodi rem aliquid? Minima, architecto impedit.
+    </div>
+</body>
+
+</html>

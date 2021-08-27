@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade define o comportamento do conteúdo quando este estoura os limites definidos de altura e largura da caixa.
+        Se não for definido o sehundo valor, o primeiro será copiado para o segundo eixo.
+        Esta propriedade é uma forma abreviada das propriedades
+        -overflow-x
+        -overflow-y
+        Valores possíveis: visible, hidden, scrool, auto, initial, inherit, unset
+        Valor inicial : visible
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 600px;
+           
+            height: 600px;
+            border: 5px solid black;
+            overflow: auto;
+
+        }
+
+        .item {
+            padding: 50px;
+            margin: 20px;
+            border: 5px solid rgb(4, 114, 22);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <img src="image/skullcoll.jpg" alt="" srcset="">
+    </div>
+</body>
+
+</html>

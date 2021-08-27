@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+       Esta propriedade CSS define uma imagem como a borda ao redor de um elemento
+       Esta propriedade é uma forma abreviada das propriedades
+       -border-image-surce
+       -border-image-width
+       -border-image-slice
+       -border-image-outset
+       -border-image-repeat
+       Valores possíveis: source slice / width / outset repeat, initial, inherit
+       Valor padrão: none 100% 1 0 stretch
+       Valor herdado: não
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        div {
+            width: 500px;
+            height: 500px;
+            filter: drop-shadow(0px 0px 0.1px rgb(255, 255, 255));
+            border: 2px solid black;
+            /*                               slice/width/outset repeat */
+            border-image: url('image/imgs.png')33% / 42px / 0 round;
+
+            /*alinhando itens na div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        div #skull {
+            /* sombra em uma imagem png sem fundo*/
+            filter: drop-shadow(0px 0px 10px rgb(23, 24, 23));
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="skull" src="image/cool.png" width="65%">
+    </div>
+</body>
+
+</html>

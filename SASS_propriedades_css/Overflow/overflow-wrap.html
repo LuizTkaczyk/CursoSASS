@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS é aplicada a elementos de linha, adicionando uma quebra de linha sempre que uma palavra for gera um estouro na caixa.
+        Valores possíveis: normal, break-word, anywhere, initial, inherit, unset
+        Valor inicial: normal
+        Valor herdado : sim
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: min-content;
+            border: 5px solid black;
+            overflow-wrap: break-word;
+            max-width: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     Lorem ipsum dolor sit amet consectetur, adipieeeeeeeeeeeeeeeeeesicing elit. Nam odio pariatur ipsum deleniti saepe laudantium! Sit sint odio, voluptatem hic qui earum, obcaecati voluptate rem, possimus ratione dicta illum quo.
+    </div>
+</body>
+
+</html>

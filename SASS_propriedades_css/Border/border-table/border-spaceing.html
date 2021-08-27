@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define a distância que haverá entre as bordas (celulas) de uma tabela
+        Valores possíveis: length, inherit, initial, unset
+        Valor padrão:2px
+        Valor herdado: sim
+        */
+
+        * {
+            box-sizing: border-box;
+
+            
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:center;
+
+        }
+
+        table{
+            border: solid 1px black;
+            width: 70vw;
+            border-collapse: separate;
+            border-spacing: 0px;
+
+        }
+
+        td, th{
+            border: solid 1px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>luiz@program.com</td>
+                <td>44-9987-3658</td>
+                <td>Tangamandapio</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

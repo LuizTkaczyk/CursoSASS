@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+       Esta propriedade CSS define o arredondamento das bordas do elemento
+       Esta propriedade é uma forma abreviada das propriedades
+       -border-top-left-radius
+       -border-right-right-radius
+       -border-bottom-right-radius
+       -border-left-left-radius
+       Valores possíveis: lenght [lenght[lenght[lenght]]],initial, inherit 
+       Valor padrão: 0
+       Valor herdado: não
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            border-style: dotted;
+            border-width: 20px;
+            border-color: rgba(0, 0, 0, 0.986);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .um {
+            width: 300px;
+            height: 300px;
+            border: 50px solid black;
+            border-radius: 10px 20px 30px 100%;
+            border-style: double;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .coracao{
+            position: relative;
+            border: 2px solid black;
+            width: 100px;
+            height: 40px;
+            
+            
+        }
+
+        .coracao:after{
+            content: 'Luiz';
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: black;
+            width: 50px;
+            height: 80px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="um">
+        <div class="coracao"></div>
+    </div>
+</body>
+
+</html>

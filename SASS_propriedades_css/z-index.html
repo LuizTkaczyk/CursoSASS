@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define a ordem de pilha de um elemento. O elemento com maior ordem de pilha está sempre na frente de um elemento com uma oredem de pilha menor.
+        Valores possíveis: auto, number, initial, inherit, unset
+        Valor padrão: auto
+        Valor herdado: não
+
+        */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            width: 250px;
+            height: 250px;
+        }
+
+        .fundo {
+            background-color: black;
+            position: relative;
+            z-index: 1;
+        }
+
+        .destaque {
+            background-color: green;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo"></div>
+    <div class="destaque"></div>
+</body>
+
+</html>

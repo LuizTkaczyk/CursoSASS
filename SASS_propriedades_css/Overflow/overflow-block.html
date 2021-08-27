@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+       Esta propriedade CSS riá determinar o que deve acontecer com um contéudo de um elememnto de bloco quando este estoura os limites do bloco,pode ser oculto, gerar uma barra de rolagem, ou não ter nenhuma alteração
+       A propriedade overflow-block direciona para overflow-y ou oberflow-x dependendo do modo de escrita do documento
+       ***Disponível apenas no Firefox
+
+       Valores possíveis : visible, hidden, scroll, initial, inherit, unset
+       Valor inicial: auto
+       Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            overflow-block: auto;
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="image/skullcoll.jpg" alt="" srcset="">
+    </div>
+</body>
+
+</html>
