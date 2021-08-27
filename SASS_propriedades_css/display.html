@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define o comportamento de exibição de um elemento
+        Valores possíveis: value, initial, inherit
+        Valor padrão: depende do elemento
+        Valor herdado: não
+
+        Valores: inline, block, inline-block, contents, flex, inline-flex, grid, inline-grid, list-item, run-in, none, table, inline-table, table-caption, table-column-group, table-header-group, table-footer-group, table-cell, table-column, table-row, initial, inherit
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 30px;
+            max-width: 50vw;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline {
+            display: inline;
+            /*Não aceita o width*/
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 20px;
+
+        }
+
+        .contents {
+            display: contents;
+            background-color: gray;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+            text-align: center;
+        }
+
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 70px);
+            text-align: center;
+        }
+
+        .list-item {
+            display: list-item;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Display grid</h2>
+        <div class="grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+
+        </div>
+        <hr>
+
+        <h2>Display inline-grid</h2>
+        <div class="inline-grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+
+        </div>
+
+        <div class="inline-grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+
+        </div>
+
+
+
+        <hr>
+        <h2>Display block</h2>
+        <div class="block">Teste de display block:</div>
+
+        <span class="block">Luiz</span>
+        <span class="block">Luiz</span>
+        <span class="block">Luiz</span>
+
+        <hr>
+        <h2>Display Inline</h2>
+        <div class="inline">Teste de display inline:</div>
+
+        <span class="inline">Luiz</span>
+        <span class="inline">Luiz</span>
+        <span class="inline">Luiz</span>
+
+        <hr>
+        <h2>Display inline-block</h2>
+        <div class="inline-block">Teste de display inline-block:</div>
+
+        <span class="inline-block">Luiz</span>
+        <span class="inline-block">Luiz</span>
+        <span class="inline-block">Luiz</span>
+
+        <hr>
+        <h2>Display contents</h2>
+        <div class="contents">Teste de display contents:</div>
+
+        <span class="contents">Luiz</span>
+        <span class="contents">Luiz</span>
+        <span class="contents">Luiz</span>
+
+        <hr>
+        <h2>Display flex</h2>
+        <div class="flex">Teste de display flex:
+            <h3>A</h3>
+            <h3>B</h3>
+            <h3>C</h3>
+        </div>
+
+
+        <hr>
+        <h2>Display inline-flex</h2>
+        <div class="inline-flex">
+            <h3>A</h3>
+            <h3>B</h3>
+            <h3>C</h3>
+        </div>
+        <div class="inline-flex">
+            <h3>A</h3>
+            <h3>B</h3>
+            <h3>C</h3>
+        </div>
+
+        <hr>
+        <h2>Display: list-item</h2>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ol>
+
+        <div>
+            <span class="list-item">Item 4</span>
+        </div>
+
+        <hr>
+
+        <h2>Display: table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tboby>
+                <tr>
+                    <td>Luiz</td>
+                    <td>ladsfkj@kdjd.com</td>
+                    <td>99999999</td>
+                </tr>
+            </tboby>
+            <tfoot>
+                <tr>
+                    <td>1 nome</td>
+                    <td>1 Email</td>
+                    <td>99</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

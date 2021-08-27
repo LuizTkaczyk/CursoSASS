@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Valores possíveis: row, row-reverse, column, column-reverse, initial, inherit, unset
+        Valor padrão : row
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 90vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+            justify-content: space-evenly;
+
+
+        }
+
+        .container>div {
+            width: 150px;
+            height: 150px;
+            border-width: .5px;
+            border-style: solid;
+            margin: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .container>div:hover {
+            background-color: rgba(0, 0, 255, 0.308);
+            color: white;
+            font-weight: bold;
+            border-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+
+    </div>
+</body>
+
+</html>

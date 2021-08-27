@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade define como um elemento deve ser renderizado/posicionado na página.
+        Por padrão todos os elementos são posicionados estaticamente (static) o que faz com que o espaço seja ocupado apenas por ele mesmo
+        Além de static, temos: fixed, absolute, relative e sticky como valores possíveis para posicionamento.
+
+        *Static: dos cinco valores este é o único que não erá afetado pelas propriedades de deslocamento top, right, bottom e left
+
+        *Fixed: Esta posição faz com que o elemento fique posicionado fizamente em relação a janela de visualização. O que fará com que não tenha sua posição afetada mesmo quando o scroll da página for rolado
+
+        *Absolute: Esta posição fz com que o elemento fique posicionado fizamente em relação ao ancestral posicionado mais próximo. Caso não exista nenhum elemento ancestral posicionado ele usará o corpo da página como relação. Isso fará com que ele acompanhe o scrool quando a página for rolada.
+
+        *Sticky: Esta posição faz com que o elemento se comporte como relative e fixed em determinados momentos.
+        Ele é posicionado em relação até que encontre uma determinada posição na janela de exibição e passe a se comportar como fixo
+
+
+        
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+
+        }
+
+        #btn1 {
+            color: yellow;
+            background-color: black;
+            top: 50px;
+            left: 50px;
+            position: static;
+        }
+
+        #btn2 {
+            color: yellow;
+            background-color: black;
+            top: 50px;
+            left: 50px;
+            position: relative;
+        }
+
+        #btn3 {
+            color: yellow;
+            background-color: black;
+            top: 50px;
+            left: 200px;
+            position: fixed;
+        }
+
+        #btn4 {
+            color: yellow;
+            background-color: black;
+            left: 150px;
+            position: absolute;
+            
+        }
+        #btn5 {
+            color: yellow;
+            background-color: black;
+            top: 150px;
+            right:120px;
+            position: sticky;
+            
+            
+        }
+
+        .div {
+            margin:200px auto;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            /*alinhando itens no centro da div*/
+           
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="btn1">Static</button>
+    <hr>
+    <button id="btn2">Relative</button>
+    <hr>
+    <button id="btn3">Fixed</button>
+    <hr>
+
+    <div class="div">
+        <button id="btn4">Absolute</button>
+        <button id="btn5">Sticky</button>
+    </div>
+
+</body>
+
+</html>

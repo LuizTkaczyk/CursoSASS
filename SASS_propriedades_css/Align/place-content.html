@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+       Esta propriedade CSS é uma abreviação das propriedades:
+       -align-content
+       -justify-content
+
+       Se o segundo valor não for informado, o primeiro valr será usado para ambos
+
+       Valores possíveis: normal, stretch, center, start, end, flex-start, flex-end, baseline, first baseline, last baseline, safe center, space-between, space-around, space-evenly, unsafe center, initial, inherit, unset
+
+       Valor padrão: normal
+       Valor herdado: não
+        */
+      
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            display: flex;
+            width:100vw;
+            height:100vh;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+            place-content: space-between center;
+
+
+        }
+
+        .container>div {
+            width: 100px;
+            height: 400px;
+            background-color: rebeccapurple;
+            margin: 10px;
+        }
+
+        .container>div:hover {
+            background-color: rgba(0, 0, 255, 0.308);
+            color: white;
+            font-weight: bold;
+            border-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+
+    </div>
+</body>
+
+</html>
