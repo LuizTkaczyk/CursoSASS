@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Background-position
+        Esta propriedade CSS define a posição inicial de uma imagem de plano de fundo
+        Valores possíveis: top, right, bottom, left, center, length, x% y%, initial, inherit, unset
+        Valor padrão: 0% 0%
+        Valor herdado: não
+
+        */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        div {
+            width: 64px;
+            height: 64px;
+            border: 1px solid black;
+            background-image: url("image/pics.png");
+            margin: 5px;
+            transition-duration: 0.5s;
+          
+           
+
+        }
+        div.icon1{
+            background-position: 0 calc(-69px * 3);
+        }
+        div.icon2{
+            background-position: 0 calc(-69px * 5);
+        }
+        div.icon3{
+            background-position: 0 calc(-69px * 6);
+        }
+        div.icon4{
+            background-position: 0 calc(-69px * 7);
+        }
+        div.icon4:hover{
+            background-position: 0 calc(-69px * 10);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="icon1"></div>
+    <div class="icon2"></div>
+    <div class="icon3"></div>
+    <div class="icon4"></div>
+</body>
+
+</html>

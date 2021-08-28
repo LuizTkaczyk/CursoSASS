@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+
+        Background-repeat
+        Esta propriedade CSS define como a imagem de fundo será repetida
+        Valores possíveis: repeat, repeat-x, repeat-y, no-repeat, initial, inherit, unset
+        Valor padrão: repeat
+        Valor herdado: não
+
+        */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            
+            background-image: url("image/dog.png");
+            background-size: 30%;
+            background-position: center;
+            background-repeat: repeat-y;
+            transition: 10s linear all;
+           
+        }
+
+        body:hover{
+            background-position: center 500%;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
