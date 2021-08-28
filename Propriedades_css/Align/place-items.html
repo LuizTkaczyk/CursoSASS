@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+       Esta propriedade CSS é uma abreviação das propriedades:
+       -align-items
+       -justify-items
+
+       Se o segundo valor não for informado, o primeiro valor será usado para ambos
+
+       Valores possíveis: lagacy, auto, normal, stretch, center, start, end, flex-start, flex-end, self-start, self-end, left, right, baseline, first baseline, last baseline, safe center, unsafe center, legacy right, legacy left, legacy center, initial, inherit, unset
+
+       Valor padrão: auto
+       Valor herdado: não
+        */
+      
+
+        body {
+            display: grid;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            place-items:center center;
+
+        }
+
+        div {
+           width: 200px;
+           height: 200px;
+           background-color: blue; 
+           margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+   
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+
+    
+</body>
+
+</html>

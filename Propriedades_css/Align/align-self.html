@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define o alinhamento de um item que está no eixo secundário dentro do container flexivel
+
+        Valores possíveis: auto, stretch, center, flex-end, flex-start, baseline, initial, inherit, unset
+
+        Valor padrão: auto
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+            display:flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            width: 100vw;
+
+            
+            
+        }
+
+        body>div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.432);
+            border: 2px solid yellow;
+        }
+
+        body>div:nth-child(2){
+            align-self: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+
+</html>

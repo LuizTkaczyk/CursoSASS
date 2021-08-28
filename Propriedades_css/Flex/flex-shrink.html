@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define como o item será reduzido em relação ao restante dos itens flexiveis do mesmo container flex
+
+        Valores possíveis: number, initial, inherit, unset
+
+        Valor padrão : 1
+        Valor herdado: não
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            align-items: center;
+
+        }
+
+        .container {
+            width:20%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px black;
+            
+            margin: 2% auto;
+        }
+
+        .container > div{
+            height: 150px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            transition: all .2s ease-in-out;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+           
+            margin: 3px;
+        }
+
+        .container > div:hover{
+          
+            border-color: blue;
+        }
+
+        .container > div.a{
+           flex-shrink: 3;
+        }
+        .container > div.b{
+            
+        }
+        .container > div.c{
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">Aaa</div>
+        <div class="b">Baaa</div>
+        <div class="c">Cee</div>
+        
+
+    </div>
+</body>
+
+</html>

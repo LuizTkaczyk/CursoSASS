@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS define o comprimento flexivel dos itens flexiveis
+        Esta propriedade é uma forma abreviada das propriedades:
+        -flex-grow
+        -flex-shrink
+        -flex-basis
+
+        Valores possíveis: flex-grow flex-shrink flex-basis, auto, initial, inherit, unset
+
+        Valor padrão :0 1 auto
+        Valor herdado: não
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 20%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px black;
+
+            margin: 2% auto;
+        }
+
+        .container>div {
+            height: 150px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            transition: all .2s ease-in-out;
+
+            flex: 1 1 100px;
+
+            margin: 3px;
+        }
+
+        .container>div:hover {
+
+            border-color: blue;
+        }
+
+        .container>div.a {
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">Aaa</div>
+        <div class="b">Baaa</div>
+        <div class="c">Cee</div>
+
+
+    </div>
+</body>
+
+</html>

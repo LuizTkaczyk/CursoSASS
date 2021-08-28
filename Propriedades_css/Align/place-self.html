@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento com propriedades CSS</title>
+
+    <style>
+        /*
+        Esta propriedade CSS é uma abreviação das propriedades
+        -align-self
+        -justify-self
+
+        Se o segundo valor não for informado, o primeiro valor será usado para ambos
+
+        Valores possíveis: auto, stretch, center, flex-end, flex-start, flex-end, baseline, initial, inherit, unset
+        Valor padrão: auto
+        Valor herdado: não
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(214, 205, 205);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            height: 100vh;
+           
+
+
+        }
+
+        body>div{
+            background-color: black;
+            border: 2px dotted yellow;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            place-self: center right;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
