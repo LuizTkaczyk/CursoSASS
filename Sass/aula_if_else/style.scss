@@ -1,0 +1,14 @@
+@mixin carro($tamanho, $circulo:false) {
+    width: $tamanho;
+    height: $tamanho;
+    @if $circulo{
+        border-radius: $tamanho / 2;
+    } @else{
+        border: 2px solid blue;
+    }
+}
+
+.photo{
+    @include carro(400px, true)
+    /*  @include carro(400px)*/
+}
