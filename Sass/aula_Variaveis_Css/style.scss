@@ -1,0 +1,36 @@
+$cor_de_fundo: #dad6d69a;
+$cor_do_header: rgb(126, 126, 231);
+$cor_do_section: rgb(68, 180, 139);
+
+:root{
+    --cor_sobrenome:yellow;
+}
+
+body{
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    background-color:$cor_de_fundo;
+
+    header{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        background-color:$cor_do_header ;
+        height: 100px;
+        h1{
+            margin: 0;
+        }
+        h2{
+            background-color: rgb(2, 0, 0);
+            padding: 20px;
+            color:var(--cor_sobrenome);
+            border-radius: 20px;
+        }
+    }
+
+    section{
+        background-color:$cor_do_section ;
+        height: calc(100vh - 200px);
+    }
+}

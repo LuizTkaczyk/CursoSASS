@@ -1,0 +1,21 @@
+$corPrimaria: rgb(208, 19, 255)!default;
+$corSecundaria: rgb(97, 97, 95)!default;
+$cantos: 0px!default;
+
+
+*{
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        color: $corPrimaria;
+    }
+}
+
+.btn{
+    background-color: $corSecundaria;
+    color: white;
+    padding: 4px 15px;
+}

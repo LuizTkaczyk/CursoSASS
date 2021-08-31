@@ -1,0 +1,34 @@
+:root {
+  --cor_sobrenome:yellow;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  background-color: #dad6d69a;
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7ee7;
+  height: 100px;
+}
+
+body header h1 {
+  margin: 0;
+}
+
+body header h2 {
+  background-color: #020000;
+  padding: 20px;
+  color: var(--cor_sobrenome);
+  border-radius: 20px;
+}
+
+body section {
+  background-color: #44b48b;
+  height: calc(100vh - 200px);
+}
+/*# sourceMappingURL=style.css.map */

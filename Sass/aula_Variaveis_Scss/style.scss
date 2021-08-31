@@ -1,0 +1,25 @@
+$cor_de_fundo: #dad6d69a;
+$cor_do_header: rgb(126, 126, 231);
+$cor_do_section: rgb(6, 240, 150);
+
+body{
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    background-color:$cor_de_fundo;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:$cor_do_header ;
+        height: 100px;
+        h1{
+            margin: 0;
+        }
+    }
+
+    section{
+        background-color:$cor_do_section ;
+        height: calc(100vh - 200px);
+    }
+}
